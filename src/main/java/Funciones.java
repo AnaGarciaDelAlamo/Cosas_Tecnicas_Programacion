@@ -1,15 +1,14 @@
+import java.util.Scanner;
 public class Funciones {
-    public double funcionRecursiva(double x, double y){
-        int i;
-        int contador = 0;
-        double resultado = 0;
-        do{
-            for(i = 0; i < y; i++){
-                 resultado = Math.pow(x, y);
-                contador++;
-            }
+    Scanner sc = new Scanner(System.in);
 
-        }while(contador != y);
+    public double funcionRecursiva(double x, double y) {
+        double resultado = 0;
+        if (y == 0) {
+            resultado = 1;
+        } else {
+            resultado = x * funcionRecursiva(x, y - 1);
+        }
         return resultado;
     }
 }

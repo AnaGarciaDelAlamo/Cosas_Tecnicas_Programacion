@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         Funciones funcion = new Funciones();
-        System.out.println(funcion.funcionRecursiva(5, 3));
+        System.out.println(funcion.funcionRecursiva(3, 3));
 
     }
 }
